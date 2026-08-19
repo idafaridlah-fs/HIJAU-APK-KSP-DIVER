@@ -259,45 +259,55 @@ button[onclick*="selaraskan"]:hover {
   transform: translateY(-2px);
 }
 
-/* --- MODUL 6: CETAK & EXPORT DOKUMEN --- */
+/* --- MODUL 6: CETAK & EXPORT DOKUMEN (PERBAIKAN SPESIFIKASI) --- */
+
 /* Tombol Kembali Edit Modul */
-button[onclick*="setActiveTab"] {
+.card button[onclick*="setActiveTab"],
+#modul-6 button[onclick*="setActiveTab"] {
   background-color: #475569 !important;
   color: #FFFFFF !important;
   border: 1px solid #64748B !important;
   padding: 0.6rem 1.25rem !important;
+  border-radius: 8px !important;
 }
 
-button[onclick*="setActiveTab"]:hover {
+.card button[onclick*="setActiveTab"]:hover,
+#modul-6 button[onclick*="setActiveTab"]:hover {
   background-color: #334155 !important;
   transform: translateY(-1px);
 }
 
 /* Tombol Export Word (.doc) */
-button[onclick*="exportWord"] {
+.card button[onclick*="exportWord"],
+#modul-6 button[onclick*="exportWord"] {
   background: #1E293B !important;
   color: #FFFFFF !important;
   border: 1px solid #334155 !important;
   padding: 0.6rem 1.25rem !important;
+  border-radius: 8px !important;
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15) !important;
 }
 
-button[onclick*="exportWord"]:hover {
+.card button[onclick*="exportWord"]:hover,
+#modul-6 button[onclick*="exportWord"]:hover {
   background: #0F172A !important;
   box-shadow: 0 6px 16px rgba(15, 23, 42, 0.25) !important;
   transform: translateY(-2px);
 }
 
 /* Tombol Cetak / Save PDF Utuh */
-button[onclick*="window.print"] {
+.card button[onclick*="window.print"],
+#modul-6 button[onclick*="window.print"] {
   background: linear-gradient(135deg, #0D9488 0%, #059669 100%) !important;
   color: #FFFFFF !important;
   border: 1px solid rgba(16, 185, 129, 0.4) !important;
   padding: 0.6rem 1.25rem !important;
+  border-radius: 8px !important;
   box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3) !important;
 }
 
-button[onclick*="window.print"]:hover {
+.card button[onclick*="window.print"]:hover,
+#modul-6 button[onclick*="window.print"]:hover {
   background: linear-gradient(135deg, #0F766E 0%, #047857 100%) !important;
   box-shadow: 0 6px 16px rgba(13, 148, 136, 0.4) !important;
   transform: translateY(-2px);
