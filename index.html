@@ -153,7 +153,156 @@ header div:has(> .btn) {
   gap: 0.5rem;
   align-items: center;
 }
+/* =========================================================
+   REKAPITULASI STYLING TOMBOL MODUL 1 - MODUL 6 (MODERN & ADAPTIF)
+   ========================================================= */
 
+/* --- GENERAL BUTTON BASE & HOVER ANIMATION --- */
+.card button, 
+.table button,
+.btn-ai,
+.btn-add,
+.btn-secondary {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  transition: all 0.25s ease-in-out !important;
+  cursor: pointer;
+}
+
+/* --- MODUL 1: TAMBAH TIM & HAPUS --- */
+/* Tombol Tambah Anggota Tim */
+button[onclick*="addTimPenyusun"], 
+.btn-add {
+  background-color: #1E293B !important;
+  color: #F8FAFC !important;
+  border: 1px solid #334155 !important;
+  padding: 0.5rem 1rem !important;
+}
+
+button[onclick*="addTimPenyusun"]:hover, 
+.btn-add:hover {
+  background-color: #0F172A !important;
+  border-color: #0D9488 !important;
+  transform: translateY(-1px);
+}
+
+/* Tombol Hapus pada Tabel */
+.table button, 
+button[onclick*="deleteTimPenyusun"],
+.btn-danger {
+  background-color: #EF4444 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 0.35rem 0.75rem !important;
+  font-size: 0.8rem !important;
+}
+
+.table button:hover, 
+button[onclick*="deleteTimPenyusun"]:hover,
+.btn-danger:hover {
+  background-color: #DC2626 !important;
+  transform: translateY(-1px);
+}
+
+/* --- MODUL 2, 4, & 5: TOMBOL GENERATOR / AUTO-GENERATE / AI --- */
+button[onclick*="generate"], 
+.btn-ai {
+  background: linear-gradient(135deg, #0F172A 0%, #0D9488 100%) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(20, 184, 166, 0.4) !important;
+  padding: 0.55rem 1.15rem !important;
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.2) !important;
+}
+
+button[onclick*="generate"]:hover, 
+.btn-ai:hover {
+  background: linear-gradient(135deg, #1E293B 0%, #0F766E 100%) !important;
+  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.35) !important;
+  transform: translateY(-2px);
+}
+
+/* --- MODUL 3: DRAF AWAL & SELARASKAN AI --- */
+/* Tombol Muat Draf Awal (Sekunder) */
+button[onclick*="loadDraft"],
+button[onclick*="draf"],
+.btn-secondary {
+  background-color: #334155 !important;
+  color: #F8FAFC !important;
+  border: 1px solid #475569 !important;
+  padding: 0.55rem 1.1rem !important;
+}
+
+button[onclick*="loadDraft"]:hover,
+button[onclick*="draf"]:hover,
+.btn-secondary:hover {
+  background-color: #1E293B !important;
+  border-color: #64748B !important;
+  transform: translateY(-1px);
+}
+
+/* Tombol Selaraskan dengan AI (Utama) */
+button[onclick*="ai"],
+button[onclick*="selaraskan"] {
+  background: linear-gradient(135deg, #0F172A 0%, #0D9488 100%) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(20, 184, 166, 0.4) !important;
+  padding: 0.55rem 1.1rem !important;
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.25) !important;
+}
+
+button[onclick*="ai"]:hover,
+button[onclick*="selaraskan"]:hover {
+  background: linear-gradient(135deg, #1E293B 0%, #0F766E 100%) !important;
+  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.4) !important;
+  transform: translateY(-2px);
+}
+
+/* --- MODUL 6: CETAK & EXPORT DOKUMEN --- */
+/* Tombol Kembali Edit Modul */
+button[onclick*="setActiveTab"] {
+  background-color: #475569 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #64748B !important;
+  padding: 0.6rem 1.25rem !important;
+}
+
+button[onclick*="setActiveTab"]:hover {
+  background-color: #334155 !important;
+  transform: translateY(-1px);
+}
+
+/* Tombol Export Word (.doc) */
+button[onclick*="exportWord"] {
+  background: #1E293B !important;
+  color: #FFFFFF !important;
+  border: 1px solid #334155 !important;
+  padding: 0.6rem 1.25rem !important;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15) !important;
+}
+
+button[onclick*="exportWord"]:hover {
+  background: #0F172A !important;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.25) !important;
+  transform: translateY(-2px);
+}
+
+/* Tombol Cetak / Save PDF Utuh */
+button[onclick*="window.print"] {
+  background: linear-gradient(135deg, #0D9488 0%, #059669 100%) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(16, 185, 129, 0.4) !important;
+  padding: 0.6rem 1.25rem !important;
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3) !important;
+}
+
+button[onclick*="window.print"]:hover {
+  background: linear-gradient(135deg, #0F766E 0%, #047857 100%) !important;
+  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.4) !important;
+  transform: translateY(-2px);
+}
+    
 header .btn, 
 header button {
   background-color: rgba(255, 255, 255, 0.08) !important;
