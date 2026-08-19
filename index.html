@@ -315,7 +315,9 @@ div[id*="modul-6"] button {
   box-shadow: 0 6px 16px rgba(13, 148, 136, 0.5) !important;
   transform: translateY(-2px);
 }
-    
+.btn-back { background-color: #475569 !important; color: #FFFFFF !important; border-radius: 8px !important; padding: 0.6rem 1.25rem !important; font-weight: 600 !important; border: 1px solid #64748B !important; cursor: pointer; }
+.btn-export { background-color: #1E293B !important; color: #FFFFFF !important; border-radius: 8px !important; padding: 0.6rem 1.25rem !important; font-weight: 600 !important; border: 1px solid #334155 !important; cursor: pointer; }
+.btn-print { background: linear-gradient(135deg, #0D9488 0%, #059669 100%) !important; color: #FFFFFF !important; border-radius: 8px !important; padding: 0.6rem 1.25rem !important; font-weight: 600 !important; border: none !important; cursor: pointer; }
 header .btn, 
 header button {
   background-color: rgba(255, 255, 255, 0.08) !important;
@@ -995,11 +997,11 @@ header button:hover {
     <div id="modul6" class="tab-content">
       <!-- TOMBOL AKSI ATAS PRATINJAU -->
       <div class="no-print" style="display:flex; justify-content:space-between; align-items:center; background:#ffffff; padding:1.25rem 2rem; border-radius:var(--radius-lg); border:1px solid var(--border-color); margin-bottom:1.5rem; box-shadow:var(--shadow-md);">
-        <button class="btn btn-secondary" style="background:#58635b; color:white;" onclick="bukaModul('modul1', document.querySelectorAll('.nav-tab')[0])">← Kembali Edit Modul</button>
+      <button class="btn-back" onclick="bukaModul('modul1', document.querySelectorAll('.nav-tab')[0])">← Kembali Edit Modul</button>
         <div style="display:flex; gap:0.75rem;">
-          <button class="btn btn-primary" style="background-color:#3B6998;" onclick="exportToWord()">📥 Export Word (.doc)</button>
-          <button class="btn btn-success" onclick="window.print()">🖨️ Cetak / Save PDF Dokumen Utuh</button>
-        </div>
+          <button class="btn-export" onclick="exportToWord()">📥 Export Word (.doc)</button>
+          <button class="btn-print" onclick="window.print()">🖨️ Cetak / Save PDF Dokumen Utuh</button>  
+      </div>
       </div>
 
       <!-- AREA DOKUMEN CETAK UTUH -->
