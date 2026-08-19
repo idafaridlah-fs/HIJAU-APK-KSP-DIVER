@@ -110,6 +110,14 @@ header button:hover {
   overflow-x: auto;
 }
 
+    /* Menyembunyikan scrollbar navigasi agar lebih rapi */
+.nav-tabs::-webkit-scrollbar {
+  display: none;
+}
+.nav-tabs {
+  -ms-overflow-style: none;  /* IE dan Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .nav-tab {
   padding: 0.55rem 1rem;
   border-radius: 6px;
@@ -133,17 +141,39 @@ header button:hover {
   background-color: var(--primary) !important;
   color: #FFFFFF !important;
   font-weight: 700;
-  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.4);
-}
-    /* WARNA TOMBOL TAB SAAT AKTIF / DIKLIK */
-.nav-tab.active {
-  background-color: var(--primary) !important;
-  color: #FFFFFF !important;
-  font-weight: 700;
   border-color: transparent;
   box-shadow: 0 2px 8px rgba(13, 148, 136, 0.4);
 }
-    /* Container */
+
+/* Styling Tombol Aksi Header (Export, Import, Status) */
+header .actions-bar, 
+header div:has(> .btn) {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+header .btn, 
+header button {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: #F8FAFC !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 6px !important;
+  padding: 0.4rem 0.8rem !important;
+  font-size: 0.825rem !important;
+  backdrop-filter: blur(4px);
+  transition: all 0.2s ease;
+}
+
+header .btn:hover, 
+header button:hover {
+  background-color: rgba(255, 255, 255, 0.18) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-1px);
+}
+
+   /* Container */
     .container {
       max-width: 1100px;
       margin: 2rem auto;
