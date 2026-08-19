@@ -259,57 +259,60 @@ button[onclick*="selaraskan"]:hover {
   transform: translateY(-2px);
 }
 
-/* --- MODUL 6: CETAK & EXPORT DOKUMEN (PERBAIKAN SPESIFIKASI) --- */
+/* --- FIX TOTAL MODUL 6 BUTTONS --- */
+#modul-6 button,
+div[id*="modul-6"] button {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+  padding: 0.65rem 1.25rem !important;
+  transition: all 0.25s ease-in-out !important;
+  cursor: pointer !important;
+}
 
-/* Tombol Kembali Edit Modul */
-.card button[onclick*="setActiveTab"],
+/* 1. Tombol Kembali Edit Modul */
+#modul-6 button:nth-child(1),
 #modul-6 button[onclick*="setActiveTab"] {
   background-color: #475569 !important;
   color: #FFFFFF !important;
   border: 1px solid #64748B !important;
-  padding: 0.6rem 1.25rem !important;
-  border-radius: 8px !important;
 }
 
-.card button[onclick*="setActiveTab"]:hover,
+#modul-6 button:nth-child(1):hover,
 #modul-6 button[onclick*="setActiveTab"]:hover {
   background-color: #334155 !important;
   transform: translateY(-1px);
 }
 
-/* Tombol Export Word (.doc) */
-.card button[onclick*="exportWord"],
+/* 2. Tombol Export Word (.doc) */
+#modul-6 button:nth-child(2),
 #modul-6 button[onclick*="exportWord"] {
   background: #1E293B !important;
   color: #FFFFFF !important;
   border: 1px solid #334155 !important;
-  padding: 0.6rem 1.25rem !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15) !important;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2) !important;
 }
 
-.card button[onclick*="exportWord"]:hover,
+#modul-6 button:nth-child(2):hover,
 #modul-6 button[onclick*="exportWord"]:hover {
   background: #0F172A !important;
-  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.25) !important;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.3) !important;
   transform: translateY(-2px);
 }
 
-/* Tombol Cetak / Save PDF Utuh */
-.card button[onclick*="window.print"],
+/* 3. Tombol Cetak / Save PDF Dokumen Utuh */
+#modul-6 button:nth-child(3),
 #modul-6 button[onclick*="window.print"] {
   background: linear-gradient(135deg, #0D9488 0%, #059669 100%) !important;
   color: #FFFFFF !important;
   border: 1px solid rgba(16, 185, 129, 0.4) !important;
-  padding: 0.6rem 1.25rem !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3) !important;
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.35) !important;
 }
 
-.card button[onclick*="window.print"]:hover,
+#modul-6 button:nth-child(3):hover,
 #modul-6 button[onclick*="window.print"]:hover {
   background: linear-gradient(135deg, #0F766E 0%, #047857 100%) !important;
-  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.4) !important;
+  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.5) !important;
   transform: translateY(-2px);
 }
     
